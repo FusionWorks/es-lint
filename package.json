@@ -1,6 +1,6 @@
 {
   "name": "@fusionworks/es-lint",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false,
   "description": "All eslint configuraitons for fusionworks bundled in here.",
   "main": "index.js",
