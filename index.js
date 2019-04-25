@@ -12,10 +12,56 @@ module.exports = {
     }
   },
   rules: {
-    'no-underscore-dangle': 'off',
-    'max-len': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'linebreak-style': 0
-    // add your custom rules below
+    'import/no-dynamic-require': false,
+    'linebreak-style': 0,
+    'no-underscore-dangle': 'off',
+    'prefer-destructuring': 'off',
+    'no-unused-vars': [
+      'warn',
+      {
+        'args': 'none',
+        'argsIgnorePattern': '^_.+$|utils'
+      }
+    ],
+    'radix': 'off',
+    'no-param-reassign': 'off',
+    'no-plusplus': [
+      'error',
+      {
+        'allowForLoopAfterthoughts': true
+      }
+    ],
+    'import/newline-after-import': 'off',
+    'arrow-parens': 'off',
+    'max-len': [
+      'warn',
+      {
+        'ignoreComments': true,
+        'ignoreTrailingComments': true,
+        'ignoreUrls': true,
+        'tabWidth': 2,
+        'code': 100
+      }
+    ],
+    'eqeqeq': 'off',
+    'consistent-return': 'off',
+    'strict': 'off',
+    'no-prototype-builtins': 'off',
+    'operator-assignment': 'off',
+    'no-useless-constructor': 'off',
+    'no-empty-function': [
+      'error',
+      {
+        'allow': [
+          'constructors',
+          'arrowFunctions'
+        ]
+      }
+    ],
+    'no-buffer-constructor': 'off',
+    'no-use-before-define': 'off',
+    'arrow-body-style': 'off',
+    'no-mixed-operators': 'off'
   }
 };
