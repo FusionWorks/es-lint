@@ -1,6 +1,6 @@
 #!/bin/bash
 PACKAGE_VERSION=$(node -p -e "require('./package.json').version")
-REMOTE_VERSION=$(npm show @fusionworks/es-lint version)
+REMOTE_VERSION=$(npm show @fusionworks/eslint-config version)
 LAST_AUTHOR="$(git log -1 --pretty=format:'%an')"
 echo "Local version: $PACKAGE_VERSION"
 echo "Remote version: $REMOTE_VERSION"

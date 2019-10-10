@@ -6,62 +6,62 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
     parserOptions: {
-      'sourceType': 'module',
-      'allowImportExportEverywhere': false,
-      'codeFrame': true
-    }
+      sourceType: 'module',
+      allowImportExportEverywhere: false,
+      codeFrame: true,
+    },
   },
   rules: {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'import/no-dynamic-require': false,
+    'import/no-dynamic-require': 0,
     'linebreak-style': 0,
     'no-underscore-dangle': 'off',
     'prefer-destructuring': 'off',
     'no-unused-vars': [
       'warn',
       {
-        'args': 'none',
-        'argsIgnorePattern': '^_.+$|utils'
-      }
+        args: 'none',
+        argsIgnorePattern: '^_.+$|utils',
+      },
     ],
-    'radix': 'off',
+    radix: 'off',
     'no-param-reassign': 'off',
     'no-plusplus': [
       'error',
       {
-        'allowForLoopAfterthoughts': true
-      }
+        allowForLoopAfterthoughts: true,
+      },
     ],
     'import/newline-after-import': 'off',
     'arrow-parens': 'off',
     'max-len': [
       'warn',
       {
-        'ignoreComments': true,
-        'ignoreTrailingComments': true,
-        'ignoreUrls': true,
-        'tabWidth': 2,
-        'code': 100
-      }
+        ignoreComments: true,
+        ignoreTrailingComments: true,
+        ignoreUrls: true,
+        tabWidth: 2,
+        code: 100,
+      },
     ],
-    'eqeqeq': 'off',
+    eqeqeq: 'off',
     'consistent-return': 'off',
-    'strict': 'off',
+    strict: 'off',
     'no-prototype-builtins': 'off',
     'operator-assignment': 'off',
     'no-useless-constructor': 'off',
     'no-empty-function': [
       'error',
       {
-        'allow': [
+        allow: [
           'constructors',
-          'arrowFunctions'
-        ]
-      }
+          'arrowFunctions',
+        ],
+      },
     ],
     'no-buffer-constructor': 'off',
     'no-use-before-define': 'off',
     'arrow-body-style': 'off',
-    'no-mixed-operators': 'off'
-  }
+    'no-mixed-operators': 'off',
+  },
 };

@@ -2,8 +2,7 @@ module.exports = {
   // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
   // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
   extends: [
-    '../../index.js',
-    'plugin:vue/recommended',
+    '../index.js',
   ].map(require.resolve),
   env: {
     browser: true,

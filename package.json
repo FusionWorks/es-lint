@@ -1,11 +1,12 @@
 {
-  "name": "@fusionworks/es-lint",
-  "version": "0.0.1",
+  "name": "@fusionworks/eslint-config",
+  "version": "0.0.0",
   "private": false,
   "description": "All eslint configuraitons for fusionworks bundled in here.",
   "main": "index.js",
   "scripts": {
-    "build": "node lib/create_dist",
+    "rollup": "rollup",
+    "build": "rollup -c",
     "patch": "npm version patch -m \"[skip travis] Release version: %s\"",
     "prerelease": "npm whoami && npm run patch && npm run build",
     "release": "npm publish dist --access public"
@@ -28,19 +29,24 @@
   ],
   "author": "GrigoreMe",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "fs-extra": "^7.0.1",
+    "rollup": "^1.23.1",
+    "rollup-plugin-copy": "^3.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2"
+  },
+  "peerDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.3.0",
+    "eslint": "^5.3.0"
+  },
+  "optionalDependencies": {
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-vue": "^5.2.2"
-  },
-  "devDependencies": {
-    "fs-extra": "^7.0.1"
-  },
-  "peerDependencies": {
-    "tslint": "^5.11.0"
   }
 }

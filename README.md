@@ -8,48 +8,62 @@
 ## Installation
 
 ```sh
-npm install @fusionworks/es-lint --save-dev
+npm install @fusionworks/eslint-config --save-dev
+```
+Then you should install airbnb rules ( those are by each config )
+```sh
+npx install-peerdeps --dev eslint-config-airbnb
 ```
 
 ## Usage
 
 ### Vue
-In `tslint.json`:
+Run  
+```sh
+npm install eslint-plugin-vue --save-dev
+```
+
+Then In `.eslintrc`:
 
 ```json
 {
-  "extends": "@fusionworks/es-lint/vue"
+  "extends": [
+    "@fusionworks/eslint-config/vue"
+  ]
 }
 ```
 ### React
-In `tslint.json`:
-
-```json
-{
-  "extends": "@fusionworks/es-lint/react"
-}
+Run  
+```sh
+npm install eslint-plugin-react --save-dev
 ```
-### Vue
-In `tslint.json`:
+
+Then In `.eslintrc`:
 
 ```json
 {
-  "extends": "@fusionworks/es-lint/vue"
+  "extends": [
+    "@fusionworks/eslint-config/react"
+  ]
 }
 ```
 
 ### Just Javascript
-In `tslint.json`:
+In `.eslintrc`:
 
 ```json
 {
-  "extends": "@fusionworks/es-lint"
+  "extends": [
+    "@fusionworks/eslint-config"
+  ]
 }
 ```
 ### Example of use
 ```json
 {
-  "extends": "@fusionworks/es-lint/react",
+  "extends": [
+    "@fusionworks/es-lint/react"
+  ],
   "linterOptions": {
     "exclude": [
       "e2e"
