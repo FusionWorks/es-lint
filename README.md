@@ -1,7 +1,7 @@
 # @FusionWorks/es-lint
 
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/FusionWorks/es-lint.svg?label=Version)](https://github.com/FusionWorks/es-lint) 
-[![npm downloads](https://img.shields.io/npm/dm/@fusionworks/es-lint.svg)](https://npmjs.org/@fusionworks/es-lint)
+[![npm downloads](https://img.shields.io/npm/dm/@fusionworks/es-lint.svg)](https://npmjs.org/@fusionworks/eslint-config)
   
 **All tslint configurations for fusionworks company bundled in here.**
 
@@ -62,7 +62,7 @@ In `.eslintrc`:
 ```json
 {
   "extends": [
-    "@fusionworks/es-lint/react"
+    "@fusionworks/eslint-config/react"
   ],
   "linterOptions": {
     "exclude": [

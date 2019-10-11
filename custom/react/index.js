@@ -23,8 +23,29 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
   },
+  parser: "babel-eslint",
+  env: {
+    browser: true,
+    node: true,
+  },
   plugins: [
     "react"
   ],
-  rules: {}
+  rules: {
+    "react/require-default-props": [
+      0,
+      {
+        forbidDefaultForRequired: true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        extensions: [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+  }
 }
