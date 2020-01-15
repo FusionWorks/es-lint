@@ -11,6 +11,10 @@ const shared = (path = '') => ({
           dest: `./dist/${path}`,
         },
         {
+          src: './README.md',
+          dest: `./dist/${path}`,
+        },
+        {
           src: './.eslintrc',
           dest: `./dist/${path}`,
         },
