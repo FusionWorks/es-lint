@@ -1,114 +1,113 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  plugins: [
-    '@typescript-eslint',
-  ],
+  ignorePatterns: ['**/*.js'],
   extends: [
+    'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
   ],
+  plugins: ['@typescript-eslint'],
   rules: {
-    "array-type": [
-      2,
-      "array-simple",
-    ],
-    "arrow-parens": true,
-    "deprecation": {
-      "severity": "warn"
-    },
-    "import-blacklist": [
-      true,
-      "rxjs/Rx"
-    ],
-    "interface-name": false,
-    "max-classes-per-file": false,
-    "max-line-length": [
-      true,
-      {
-        "limit": 140,
-        // class [a-zA-Z]+ implements pattern will ignore all class declarations implementing interfaces.
-        // // pattern will ignore all in-line comments.
-        "ignore-pattern": "class [a-zA-Z]+ implements |// "
-      }
-    ],
-    "member-access": [
-      true,
-      "check-accessor",
-    ],
-    "member-ordering": [
-      true, {
-        "order": [
-          // Static fields
-          "public-static-field",
-          "protected-static-field",
-          "private-static-field",
+    // "array-type": [
+    //   2,
+    //   "array-simple",
+    // ],
+    "arrow-parens": 2,
+    // "deprecation": 1,
+    // "import-blacklist": [
+    //   2,
+    //   "rxjs/Rx"
+    // ],
+    "interface-name": 0,
+    "max-classes-per-file": 0,
+    // "max-line-length": [
+    //   2,
+    //   {
+    //     "limit": 140,
+    //     // class [a-zA-Z]+ implements pattern will ignore all class declarations implementing interfaces.
+    //     // // pattern will ignore all in-line comments.
+    //     "ignore-pattern": "class [a-zA-Z]+ implements |// "
+    //   }
+    // ],
+    // "member-access": [
+    //   2,
+    //   "check-accessor",
+    // ],
+    // "member-ordering": [
+    //   2, {
+    //     "order": [
+    //       // Static fields
+    //       "public-static-field",
+    //       "protected-static-field",
+    //       "private-static-field",
 
-          // Instance fields
-          "public-instance-field",
-          "protected-instance-field",
-          "private-instance-field",
+    //       // Instance fields
+    //       "public-instance-field",
+    //       "protected-instance-field",
+    //       "private-instance-field",
 
-          // Constructor
-          "public-constructor",
-          "protected-constructor",
-          "private-constructor",
+    //       // Constructor
+    //       "public-constructor",
+    //       "protected-constructor",
+    //       "private-constructor",
 
-          // Instance methods
-          "public-instance-method",
-          "protected-instance-method",
-          "private-instance-method",
+    //       // Instance methods
+    //       "public-instance-method",
+    //       "protected-instance-method",
+    //       "private-instance-method",
 
-          // Static methods
-          "public-static-method",
-          "protected-static-method",
-          "private-static-method",
-        ],
-      },
-    ],
-    "no-consecutive-blank-lines": true,
-    "no-empty": [
-      true,
-      "allow-empty-catch",
-      "allow-empty-functions",
-    ],
-    "no-inferrable-types": [
-      true,
-      "ignore-params"
-    ],
-    "no-non-null-assertion": true,
-    "no-redundant-jsdoc": true,
-    "no-switch-case-fall-through": true,
-    "no-use-before-declare": true,
-    "no-var-requires": false,
-    "object-literal-key-quotes": [
-      true,
-      "as-needed"
-    ],
-    "object-literal-sort-keys": false,
-    "ordered-imports": false,
-    "quotemark": [
-      true,
-      "single"
-    ],
-    "trailing-comma": [
-      true,
-      {
-        "multiline": {
-          "objects": "always",
-          "arrays": "always",
-          "functions": "ignore",
-          "typeLiterals": "ignore"
-        },
-        "esSpecCompliant": true
-      }
-    ],
-    "no-debugger": true,
+    //       // Static methods
+    //       "public-static-method",
+    //       "protected-static-method",
+    //       "private-static-method",
+    //     ],
+    //   },
+    // ],
+    // "no-consecutive-blank-lines": 2,
+    // "no-empty": [
+    //   2,
+    //   {
+    //     "allowEmptyCatch": true,
+    //   }
+    // ],
+    // "no-inferrable-types": [
+    //   2,
+    //   "ignore-params"
+    // ],
+    // "no-non-null-assertion": 2,
+    // "no-redundant-jsdoc": 2,
+    // "no-switch-case-fall-through": 2,
+    // "no-use-before-declare": 2,
+    "no-var-requires": 0,
+    // "object-literal-key-quotes": [
+    //   2,
+    //   "as-needed"
+    // ],
+    "object-literal-sort-keys": 0,
+    "ordered-imports": 0,
+    // "quotemark": [
+    //   2,
+    //   "single"
+    // ],
+    // "trailing-comma": [
+    //   2,
+    //   {
+    //     "multiline": {
+    //       "objects": "always",
+    //       "arrays": "always",
+    //       "functions": "ignore",
+    //       "typeLiterals": "ignore"
+    //     },
+    //     "esSpecCompliant": 2
+    //   }
+    // ],
+    "no-debugger": 2,
     "prefer-const": [
-      true,
+      2,
       {
         "destructuring": "all"
       }
     ],
-    "no-unused-expression": true
+    // "no-unused-expression": 2
   },
 };
