@@ -4,43 +4,43 @@ module.exports = {
   ],
   rules: {
     // New rules in here
-    "no-output-on-prefix": true,
-    "use-input-property-decorator": true,
-    "use-output-property-decorator": true,
-    "use-host-property-decorator": true,
-    "no-input-rename": true,
-    "no-output-rename": true,
-    "use-life-cycle-interface": true,
-    "use-pipe-transform-interface": true,
-    "component-class-suffix": true,
-    "directive-class-suffix": true,
+    "no-output-on-prefix": 2,
+    "use-input-property-decorator": 2,
+    "use-output-property-decorator": 2,
+    "use-host-property-decorator": 2,
+    "no-input-rename": 2,
+    "no-output-rename": 2,
+    "use-life-cycle-interface": 2,
+    "use-pipe-transform-interface": 2,
+    "component-class-suffix": 2,
+    "directive-class-suffix": 2,
     "array-type": [
-      true,
+      2,
       "array",
     ],
     "semicolon": [
-      true,
+      2,
       "always",
       "ignore-bound-class-methods",
       "ignore-interfaces",
     ],
     "no-empty": [
-      false
+      0
     ],
     "whitespace": [
-      true,
+      2,
       "check-module"
     ],
     "trailing-comma": [
-      true,
+      2,
       {
         "multiline": "always",
         "singleline": "never",
-        "esSpecCompliant": true
+        "esSpecCompliant": 2
       }
     ],
     "import-blacklist": [
-      true,
+      2,
       "rxjs",
       "ngx-bootstrap"
     ],
