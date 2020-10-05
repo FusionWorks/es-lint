@@ -52,4 +52,14 @@ export default [
     ],
     ...shared('vue'),
   },
+  {
+    input: 'custom/typescript/index.js',
+    output: [
+      {
+        file: 'dist/typescript/index.js',
+        format: 'cjs',
+      },
+    ],
+    ...shared('typescript'),
+  },
 ];
