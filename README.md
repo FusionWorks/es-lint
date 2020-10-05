@@ -10,10 +10,15 @@
 ```sh
 npm install @fusionworks/eslint-config --save-dev
 ```
-Then you should install airbnb rules ( those are by each config )
+Then you should install airbnb rules ( those are by each config ):  
+JavaScript:  
 ```sh
-npx install-peerdeps --dev eslint-config-airbnb
+npx install-peerdeps --dev eslint-config-airbnb-base
 ```
+React:  
+```sh
+npx install-peerdeps --dev eslint-config-airbnb-base
+```  
 
 ## Usage
 
